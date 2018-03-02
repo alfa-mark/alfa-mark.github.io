@@ -1,12 +1,12 @@
 $(document).ready(function(){
     $(".navbar a").on('click', function(event) {
-        if (this.hash !== "") {
+        if (this.dataset.scrolltarget !== "") {
             event.preventDefault();
-            var hash = this.hash;
+            var scrollToDataTrg = this.dataset.scrolltarget;
             $('html, body').animate({
-                scrollTop: $(hash).offset().top
+                scrollTop: $(scrollToDataTrg).offset().top
             }, 900, function(){
-                window.location.hash = hash;
+                window.location.scrollToDataTrg = scrollToDataTrg;
             });
         }
     });

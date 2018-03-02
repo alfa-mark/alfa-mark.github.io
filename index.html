@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="static/tools/font_awesome/css/font-awesome.min.css">
     <script src="static/js/jquery.min.js"></script>
 </head>
-<body id="gotoTop" data-spy="scroll" data-target=".navbar">
+<body id="topPlace" data-spy="scroll" data-target=".navbar">
 <nav class="navbar navbar-default navbar-fixed-top customMenu">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -22,13 +22,13 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand logo" href="#gotoTop"></a>
+            <a class="navbar-brand logo emulateLink" data-scrolltarget="#topPlace"></a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-left">
-                <li class="menu-item"><a href="#aboutus">Телемаркетинг</a></li>
-                <li class="menu-item"><a href="#advantages">Наши преимущества</a></li>
-                <li class="menu-item"><a href="#contacts">Контактная информация</a></li>
+                <li class="menu-item emulateLink"><a data-scrolltarget="#aboutus">Телемаркетинг</a></li>
+                <li class="menu-item emulateLink" ><a data-scrolltarget="#advantages">Наши преимущества</a></li>
+                <li class="menu-item emulateLink"><a data-scrolltarget="#contacts">Контактная информация</a></li>
             </ul>
         </div>
     </div>
