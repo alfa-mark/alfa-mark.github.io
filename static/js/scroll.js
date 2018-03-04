@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $(".navbar a").on('click', function(event) {
+    $(".navbar .hasScroll").on('click', function(event) {
         if (this.dataset.scrolltarget !== "") {
             event.preventDefault();
             var scrollToDataTrg = this.dataset.scrolltarget;
